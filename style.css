@@ -1,0 +1,88 @@
+ .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(241, 241, 241);
+    padding: 1rem 1.5rem;
+    width: 35rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  
+  .close-button:hover {
+    background-color: darkgray;
+  }
+  
+  .show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  }
+  
+  .tick {
+    color: rgba(0, 218, 29, 0.767);
+    font-size: 60px;
+    margin-left: 35px;
+  }
+  
+  .modal-heading {
+    letter-spacing: 2px;
+  }
+  
+  .stats {
+    color: rgb(143, 143, 143);
+    margin-top: 30px;
+  }
+  
+  .new-game {
+    background: rgb(75, 189, 0);
+    color: #fff;
+    border: 0;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .deck {
+        width: 350px;
+        min-height: 280px;
+    }
+    .card {
+        width: 68px;
+        height: 68px;
+    }
+    .show{
+        font-size: 30px;
+    }
+    .modal-content {
+        width: 15rem;
+    }
+    .tick {
+        color: rgba(0, 218, 29, 0.767);
+        font-size: 45px;
+        margin-left: 25px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .score-table {
+        width: 320px;
+    }
+  }
